@@ -2,7 +2,7 @@ services:
   - type: web
     name: disaster-tweet-classifier
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && pip install --upgrade pip setuptools wheel
     startCommand: python app.py
     plan: free
     envVars:
